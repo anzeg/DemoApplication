@@ -10,7 +10,7 @@ Your final product should be a backend application for movies and actors managem
 ## Movies
 Movies have properties as title, year, description, list of actors, some pictures, etc. (as identifier use imdbID). Implement REST operations to support basic UI requirements:
 * list all movies
-* list movies with pagination support
+* list movies with pagination support (describe filtering, sorting, pagination support on https://github.com/kumuluz/kumuluzee-rest)
 * search of movie
 * CRUD operations
 

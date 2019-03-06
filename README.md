@@ -31,7 +31,7 @@ In order to run these examples as they are intended, you will need the following
         java -version
         ```
 
-2. Maven 3.2.1 (or newer):
+2. Maven 3.6.0 (or newer):
     * If you have installed Maven, you can check the version by typing the following in a command line:
         
         ```
@@ -44,7 +44,7 @@ In order to run these examples as they are intended, you will need the following
         ```
         git --version
         ```
-4. Postgresql
+4. Postgresql 11.0 (or newer)
 	* Install postgresql database: (https://www.postgresql.org/download/)
 	* Create database (https://www.postgresql.org/docs/9.0/sql-createdatabase.html)
 	```
@@ -66,11 +66,8 @@ mvn clean install
 ### Run
 Start the application using the following command:
 ```cmd
-java -jar ${project.build.finalName}.jar
-```
-Example:
-```cmd
 java -jar target\DemoApplication-1.0-SNAPSHOT.jar
 ```
 
 ### TODO Write tests with Kumuluzee testing tool
+For future need to write tests

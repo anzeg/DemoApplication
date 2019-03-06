@@ -72,3 +72,5 @@ Example:
 ```cmd
 java -jar target\DemoApplication-1.0-SNAPSHOT.jar
 ```
+
+### TODO Write tests with Kumuluzee testing tool

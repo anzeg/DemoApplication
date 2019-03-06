@@ -71,7 +71,7 @@ public class ActorService implements IActorService {
             existActors.getMovies().add(existMovie);
             existMovie.getActors().add(existActors);
         } else{
-            throw new RuntimeException("Missing requeired inpuit paramters imdbId=" + imdbId + " or actorId=" + actorId);
+            throw new RuntimeException("Missing requeired input parameters imdbId=" + imdbId + " or actorId=" + actorId);
         }
     }
 
@@ -96,7 +96,7 @@ public class ActorService implements IActorService {
             }
 
         } else{
-            throw new RuntimeException("Missing requeired inpuit paramters imdbId=" + imdbId + " or actorId=" + actorId);
+            throw new RuntimeException("Missing requeired input parameters imdbId=" + imdbId + " or actorId=" + actorId);
         }
     }
 

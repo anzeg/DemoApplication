@@ -10,7 +10,6 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Set;
 
 @NoArgsConstructor
@@ -18,14 +17,6 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "actors")
-/*@NamedQueries({
-        @NamedQuery(
-                name = "Actor.findActors",
-                query = "SELECT a " +
-                        "FROM Actors a"
-        )
-})*/
-//@JsonIdentityInfo(generator= ObjectIdGenerators.IntSequenceGenerator.class, property="@imdbId")
 public class Actors implements Serializable {
 
     @Id
@@ -49,7 +40,6 @@ public class Actors implements Serializable {
     @JoinTable(name="MOVIES_ACTORS",
             joinColumns=@JoinColumn(name="ACTOR_ID"),
             inverseJoinColumns=@JoinColumn(name="IMDB_ID"))
-//    @JoinTable(name = "movies_actors")
     @JsonIgnoreProperties("actors")
     @EqualsAndHashCode.Exclude
     private Set<Movies> movies;

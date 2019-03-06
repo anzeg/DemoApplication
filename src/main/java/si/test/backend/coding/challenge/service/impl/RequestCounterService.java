@@ -1,8 +1,5 @@
 package si.test.backend.coding.challenge.service.impl;
 
-import si.test.backend.coding.challenge.service.impl.FileManager;
-
-import java.util.FormatFlagsConversionMismatchException;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class RequestCounterService {

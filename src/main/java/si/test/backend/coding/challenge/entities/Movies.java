@@ -38,7 +38,6 @@ public class Movies implements Serializable {
     private String description;
 
     @ManyToMany (fetch = FetchType.EAGER, mappedBy = "movies")
-    //@JoinTable(name = "movies_actors")
     @JsonIgnoreProperties("movies")
     @EqualsAndHashCode.Exclude
     private Set<Actors> actors;
